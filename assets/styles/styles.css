@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(77, 171, 247);
+}
+
+.container {
+  background-color: black;
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+  width: 300px;
+  padding: 10px 20px 25px 20px;
+  border-radius: 15px;
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /*flex-direction: row; */
+  /* flex-wrap: wrap; */
+  gap: 15px;
+  justify-content: right;
+  align-items: center;
+  padding: 20px 15px;
+}
+
+p {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  margin: 0;
+  /* font-size: 35px; */
+  font-weight: bold;
+  color: #ffffff;
+  /* padding: 15px 0; */
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-output {
+  font-size: 25px;
+}
+
+.current-output {
+  font-size: 35px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  /* padding: 0 10px; */
+}
+
+button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+#asterisk {
+  padding-top: 15px;
+}
+
+#dot {
+  padding-bottom: 8px;
+}
+
+.white-bg {
+  background-color: #ffffff;
+  color: black;
+  &:hover {
+    background-color: rgb(4, 128, 252);
+    color: #ffffff;
+  }
+}
+
+.darkgrey-bg {
+  background-color: rgba(67, 65, 65, 0.8);
+  color: white;
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(77, 171, 247);
+  }
+}
+
+.dark-yellow-bg {
+  background-color: rgb(175, 158, 5);
+  color: #ffffff;
+  font-size: 30px;
+  &:hover {
+    background-color: #09f563;
+    color: #ffffff;
+  }
+}
+
+.span-2 {
+  width: 110px;
+  border-radius: 20px;
+}
+
+/* @media only screen and (max-width = 600px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+    margin: 5px;
+  }
+} */
